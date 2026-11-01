@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="140" viewBox="0 0 520 140">
+  <rect width="520" height="140" fill="white"/>
+  <rect x="12" y="18" width="78" height="104" rx="8" fill="#1a4f9b"/>
+  <text x="51" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="white">FI</text>
+  <text x="108" y="56" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#1a4f9b">UNCUYO</text>
+  <text x="108" y="86" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#24364d">Facultad de Ingeniería</text>
+  <text x="108" y="111" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#64748b">Universidad Nacional de Cuyo</text>
+</svg>
