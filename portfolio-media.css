@@ -1,0 +1,44 @@
+/* Figure galleries for experience entries and project pages */
+.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}
+.media-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.media-grid figure{margin:0;background:#fff;border:1px solid #e5eaf2;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.media-grid a{display:block;background:#f6f8fb;cursor:zoom-in}
+.media-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;padding:10px;box-sizing:border-box;transition:transform .25s ease}
+.media-grid img.cover{object-fit:cover;padding:0}
+.media-grid a:hover img{transform:scale(1.015)}
+.media-grid figcaption{font-size:.88rem;line-height:1.45;padding:10px 13px;color:#59657b;border-top:1px solid #eef1f6}
+.media-grid.wide{grid-template-columns:1fr}
+.media-grid.wide img{aspect-ratio:auto;max-height:420px}
+
+.report-figures{margin-top:56px}
+.report-figures h2{margin:6px 0 4px}
+.report-figures .intro{margin-bottom:0}
+
+/* Energiu: field photo + poster, both shown uncropped at equal height */
+.energiu-gallery.poster-layout{grid-template-columns:8fr 3fr;align-items:start}
+.energiu-gallery.poster-layout img{height:auto;object-fit:contain;display:block}
+.energiu-gallery.poster-layout figure.poster{background:#f3f5f8}
+.energiu-gallery.poster-layout figure.poster a{display:block;cursor:zoom-in}
+
+/* compact strip inside experience cards */
+.experience-feature .media-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.experience-feature .media-grid img{padding:6px}
+.experience-feature .media-grid img.cover{padding:0}
+.experience-feature .media-grid figcaption{font-size:.8rem;padding:8px 10px}
+
+@media (max-width:900px){
+  .experience-feature .media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .media-grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .media-grid,.media-grid.three{grid-template-columns:1fr}
+  .experience-feature .media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .energiu-gallery.poster-layout{grid-template-columns:1fr}
+  .energiu-gallery.poster-layout figure.poster img{max-height:none;width:70%;margin:0 auto;padding:12px 0}
+}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;background:rgba(12,18,30,.88);display:none;align-items:center;justify-content:center;z-index:1000;padding:24px;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:min(1200px,100%);max-height:86vh;border-radius:10px;background:#fff}
+.lb p{position:absolute;bottom:18px;left:0;right:0;text-align:center;color:#dfe6f1;font-size:.92rem;margin:0;padding:0 24px}
