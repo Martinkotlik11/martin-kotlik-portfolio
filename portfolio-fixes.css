@@ -9,3 +9,5 @@
 .energiu-gallery img{width:100%;height:235px;object-fit:cover}
 .energiu-gallery figcaption{font-size:.88rem;padding:9px 12px;color:#59657b}
 @media(max-width:700px){.case>.heroimage{max-height:310px}.energiu-gallery{grid-template-columns:1fr}.energiu-gallery img{height:auto;max-height:300px;object-fit:contain}}
+
+.case>.eyebrow{display:block}
